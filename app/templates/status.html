@@ -24,7 +24,7 @@
     <div class="panel panel-primary">
       <div class="panel-heading cd-collapsable">
         <h3 class="panel-title">
-          Ceph Cluster Overall Status
+          存储集群-状态总览
         </h3>
       </div>
       <!--here we add the overall status-->
@@ -36,7 +36,7 @@
     <div class="panel panel-primary">
       <div class="panel-heading cd-collapsable">
         <h3 class="panel-title">
-          Ceph Cluster Monitor Status
+          存储集群-监视器状态
         </h3>
       </div>
       <div class="panel-body">
@@ -50,7 +50,7 @@
     <div class="panel panel-primary">
       <div class="panel-heading cd-collapsable">
         <h3 class="panel-title">
-          Ceph Cluster OSD Status
+          存储集群-存储节点状态
         </h3>
       </div>
       <div class="panel-body" align="center">
@@ -73,7 +73,7 @@
               <!--here we add the number of osds with IN state-->
               <div class="panel-body" id="num_in_osds"></div>
             </div>
-          </div>  
+          </div>
 
           <div class="col-md-3">
             <div class="panel panel-success">
@@ -81,7 +81,7 @@
               <!--here we add the number of osds with UP state-->
               <div class="panel-body" id="num_up_osds"></div>
             </div>
-          </div>  
+          </div>
 
           <div class="col-md-3">
             <div class="panel panel-danger">
@@ -89,7 +89,7 @@
               <!--here we count the osds with and unhealthy state-->
               <div class="panel-body" id="unhealthy_osds"></div>
             </div>
-          </div>  
+          </div>
         </div>
 
       </div>
@@ -101,7 +101,7 @@
     <div class="panel panel-primary">
       <div class="panel-heading cd-collapsable">
         <h3 class="panel-title">
-          Ceph Cluster Performance Metrics
+          存储集群-性能指标
         </h3>
       </div>
       <div class="panel-body">
@@ -127,7 +127,7 @@
     <div class="panel panel-primary">
       <div class="panel-heading cd-collapsable">
         <h3 class="panel-title">
-          Ceph Cluster Placement Group Status
+          存储集群-归置组状态
         </h3>
       </div>
       <div class="panel-body">
@@ -136,7 +136,7 @@
 
           <div class="col-md-4">
             <div class="panel panel-default">
-              <div class="panel-heading">Storage</div>
+              <div class="panel-heading">存储容量</div>
               <!--here we place the fancy storage usage gauge-->
               <div class="panel-body" id="utilization" style="height:385px"></div>
               <div class="panel-footer">
@@ -151,7 +151,7 @@
 
           <div class="col-md-4">
             <div class="panel panel-default">
-              <div class="panel-heading">Write / second</div>
+              <div class="panel-heading">写 / 秒</div>
               <div class="panel-body" align="center">
                 <!--here we add the bytes written per second-->
                 <h1 id="write_bytes"></h1>
@@ -159,7 +159,7 @@
             </div>
 
             <div class="panel panel-default">
-              <div class="panel-heading">Read / second</div>
+              <div class="panel-heading">读 / 秒</div>
               <div class="panel-body" align="center">
                 <!--here we add the bytes read per second-->
                 <h1 id="read_bytes"></h1>
@@ -167,7 +167,7 @@
             </div>
 
             <div class="panel panel-default" id="ops_container">
-              <div class="panel-heading">Operations / second</div>
+              <div class="panel-heading">操作数 / 秒</div>
               <div class="panel-body" align="center">
                 <!--here we add the operations per second-->
                 <h1 id="operations_per_second"></h1>
@@ -176,7 +176,7 @@
             <div class="row">
               <div class="col-md-6" id="write_ops_container">
                 <div class="panel panel-default" >
-                  <div class="panel-heading">Write ops / second</div>
+                  <div class="panel-heading">写操作 / 秒</div>
                   <div class="panel-body" align="center">
                     <!--here we add the operations per second-->
                     <h1 id="write_operations_per_second"></h1>
@@ -185,7 +185,7 @@
               </div>
               <div class="col-md-6" id="read_ops_container">
                 <div class="panel panel-default">
-                  <div class="panel-heading">Read ops / second</div>
+                  <div class="panel-heading"> 读操作 / 秒</div>
                   <div class="panel-body" align="center">
                     <!--here we add the operations per second-->
                     <h1 id="read_operations_per_second"></h1>
@@ -197,7 +197,7 @@
 
           <div class="col-md-4">
             <div class="panel panel-default">
-              <div class="panel-heading">PG Status</div>
+              <div class="panel-heading">PG 状态</div>
               <!--here we place the fancy pg donut chart-->
               <div class="panel-body" id="pg_status" style="max-width:300px;height: 385px;"></div>
               <div class="panel-footer">
