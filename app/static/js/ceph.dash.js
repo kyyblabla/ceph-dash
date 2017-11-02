@@ -267,7 +267,7 @@ $(function () {
             $('#last_update').hide();
 
             // Update cluster fsid
-            $("#cluster_fsid").html(data['fsid']);
+            $("#cluster_fsid").html('存储集群ID:'+data['fsid']);
 
             // load all relevant data from retrieved json {{{
             // ----------------------------------------------------------------
@@ -355,11 +355,11 @@ $(function () {
             var chart = $("#pg_status").dxPieChart("instance");
             chart.option('dataSource', pgsByState);
 
-            $("#pg_status_info").html(numPgs + "  placementgroups in cluster");
+            $("#pg_status_info").html(numPgs + " 归置组");
 
             // update recovering status
             if (typeof(recoverBytes) != 'undefined') {
-                $("#recovering_bytes").html(panel('warning', 'Recovering bytes / second', fmtBytes(recoverBytes)));
+                $("#recovering_bytes").html(panel('warning', 'Recovering bytes / 秒', fmtBytes(recoverBytes)));
             } else {
                 $("#recovering_bytes").empty();
             }
@@ -409,7 +409,7 @@ $(function () {
 
             // update overall cluster state
             $("#overall_status").empty();
-            $("#overall_status").append(message(ceph2bootstrap[clusterStatusOverall], 'Cluster Status:' + clusterStatusOverall));
+            $("#overall_status").append(message(ceph2bootstrap[clusterStatusOverall], '集群状态:' + clusterStatusOverall));
 
             // update overall cluster status details
             $("#overall_status").append('<ul class="list-group">');
@@ -427,7 +427,7 @@ $(function () {
                         health = mon_health['health'];
                     }
                 });
-                msg = 'Monitor ' + mon['name'].toUpperCase() + ': ' + health;
+                msg = '监控器 ' + mon['name'].toUpperCase() + ': ' + health;
                 $("#monitor_status").append('<div class="col-md-4">' + message(ceph2bootstrap[health], msg) + '</div>');
             });
 
