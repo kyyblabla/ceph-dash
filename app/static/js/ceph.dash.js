@@ -267,7 +267,7 @@ $(function () {
             $('#last_update').hide();
 
             // Update cluster fsid
-            $("#cluster_fsid").html('存储集群ID:'+data['fsid']);
+            $("#cluster_fsid").html('存储集群ID: '+data['fsid']);
 
             // load all relevant data from retrieved json {{{
             // ----------------------------------------------------------------
