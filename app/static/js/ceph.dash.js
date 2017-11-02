@@ -26,12 +26,12 @@ $(function () {
             color: '#7a8288'
         },
         title: {
-             text: 'Cluster storage utilization',
+             text: '集群存储利用率',
              font: { size: 18, color: '#c8c8c8', family: 'Helvetica' },
              position: 'bottom-center'
         },
         geometry: {
-            startAngle: 180, 
+            startAngle: 180,
             endAngle: 0
         },
         margin: {
@@ -46,7 +46,7 @@ $(function () {
             ]
         },
         scale: {
-            startValue: 0, 
+            startValue: 0,
             endValue: 100,
             majorTick: {
                 tickInterval: 20
@@ -118,7 +118,7 @@ $(function () {
             percentPrecision: 2,
             font: { size: 14, color: '#1c1e22', family: 'Helvetica' },
             arrowLength: 10,
-            customizeText: function() { 
+            customizeText: function() {
                 return this.valueText + " - " + this.argumentText + " (" + this.percentText + ")";
             }
         },
