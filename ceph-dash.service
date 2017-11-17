@@ -1,0 +1,10 @@
+[Unit]
+    Description=Ceph Dash
+    After=network.target
+[Service]
+    ExecStart=/root/ceph-dash-master/ceph-dash.py
+    Restart=always
+    PIDFile=/var/run/ceph-dash.pid
+    RestartSec=5000ms
+[Install]
+    WantedBy=multi-user.target
